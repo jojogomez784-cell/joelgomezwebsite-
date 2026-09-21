@@ -1,0 +1,451 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="description" content="BuildPro Construction - Professional construction, renovation, and remodeling services."> <title>BuildPro Construction | Building Your Future</title> <style> * { margin: 0; padding: 0; box-sizing: border-box; } html { scroll-behavior: smooth; } body { font-family: Arial, Helvetica, sans-serif; color: #222; line-height: 1.6; background: #f7f7f7; } /* Navigation */ nav { position: fixed; top: 0; width: 100%; z-index: 1000; background: #171717; display: flex; justify-content: space-between; align-items: center; padding: 18px 7%; box-shadow: 0 2px 10px rgba(0,0,0,0.25); } .logo { color: #f5a623; font-size: 1.6rem; font-weight: bold; letter-spacing: 1px; } .logo span { color: white; } nav ul { list-style: none; display: flex; gap: 28px; } nav ul li a { color: white; text-decoration: none; font-weight: 600; transition: color 0.3s; } nav ul li a:hover { color: #f5a623; } /* Hero */ .hero { min-height: 100vh; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1800&q=80") center/cover; display: flex; align-items: center; padding: 120px 7% 70px; color: white; } .hero-content { max-width: 700px; } .hero h1 { font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1.05; margin-bottom: 22px; } .hero h1 span { color: #f5a623; } .hero p { font-size: 1.15rem; max-width: 600px; margin-bottom: 32px; color: #e5e5e5; } .btn { display: inline-block; padding: 14px 28px; background: #f5a623; color: #171717; text-decoration: none; font-weight: bold; border-radius: 4px; transition: 0.3s; margin-right: 10px; } .btn:hover { background: #ffbd4a; transform: translateY(-2px); } .btn-outline { background: transparent; border: 2px solid white; color: white; } .btn-outline:hover { background: white; color: #171717; } /* General sections */ section { padding: 90px 7%; } .section-title { text-align: center; margin-bottom: 50px; } .section-title h2 { font-size: 2.5rem; margin-bottom: 12px; } .section-title span { color: #f5a623; } .section-title p { color: #666; } /* Services */ .services { background: white; } .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; } .service-card { background: #f8f8f8; padding: 35px 25px; border-radius: 8px; border-bottom: 4px solid transparent; transition: 0.3s; } .service-card:hover { transform: translateY(-8px); border-bottom-color: #f5a623; box-shadow: 0 10px 30px rgba(0,0,0,0.1); } .service-icon { font-size: 2.5rem; margin-bottom: 15px; } .service-card h3 { margin-bottom: 10px; font-size: 1.3rem; } .service-card p { color: #666; } /* About */ .about { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; background: #f2f2f2; } .about-image img { width: 100%; border-radius: 8px; display: block; } .about-content h2 { font-size: 2.6rem; margin-bottom: 20px; } .about-content h2 span { color: #f5a623; } .about-content p { color: #555; margin-bottom: 18px; } .features { list-style: none; margin: 25px 0; } .features li { margin-bottom: 12px; font-weight: 600; } .features li::before { content: "✓"; color: #f5a623; font-weight: bold; margin-right: 10px; } /* Projects */ .projects { background: white; } .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; } .project { position: relative; overflow: hidden; border-radius: 8px; height: 280px; } .project img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; } .project:hover img { transform: scale(1.08); } .project-info { position: absolute; bottom: 0; left: 0; right: 0; padding: 25px; color: white; background: linear-gradient(transparent, rgba(0,0,0,0.9)); } .project-info h3 { font-size: 1.3rem; } /* Stats */ .stats { background: #171717; color: white; display: grid; grid-template-columns: repeat(4, 1fr); text-align: center; gap: 20px; } .stat h3 { color: #f5a623; font-size: 2.8rem; } .stat p { color: #ccc; } /* Contact */ .contact { background: #f2f2f2; } .contact-container { max-width: 1000px; margin: auto; display: grid; grid-template-columns: 1fr 1.3fr; gap: 40px; } .contact-info h3 { font-size: 1.7rem; margin-bottom: 20px; } .contact-info p { margin-bottom: 15px; color: #555; } .contact-form { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 5px 25px rgba(0,0,0,0.08); } .form-group { margin-bottom: 18px; } .form-group label { display: block; margin-bottom: 7px; font-weight: bold; } .form-group input, .form-group textarea { width: 100%; padding: 13px; border: 1px solid #ddd; border-radius: 4px; font: inherit; } .form-group textarea { height: 130px; resize: vertical; } .contact-form button { border: none; cursor: pointer; font: inherit; } /* Footer */ footer { background: #111; color: #aaa; text-align: center; padding: 25px; } footer strong { color: #f5a623; } /* Responsive */ @media (max-width: 900px) { .service-grid, .project-grid { grid-template-columns: repeat(2, 1fr); } .about, .contact-container { grid-template-columns: 1fr; } .stats { grid-template-columns: repeat(2, 1fr); } } @media (max-width: 650px) { nav { padding: 15px 5%; } nav ul { display: none; } section { padding: 65px 5%; } .hero { padding-left: 5%; padding-right: 5%; } .service-grid, .project-grid, .stats { grid-template-columns: 1fr; } .hero h1 { font-size: 2.8rem; } .btn { margin-bottom: 10px; } } </style> </head> <body> <!-- Navigation --> <nav> <div class="logo">BUILD<span>PRO</span></div>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#services">Services</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav> <!-- Hero --> <section class="hero" id="home"> <div class="hero-content"> <h1>Building Your <span>Future</span></h1>
+  <p>
+    Professional construction and renovation services built on
+    quality, reliability, and years of experience.
+  </p>
+
+  <a href="#contact" class="btn">Get a Free Quote</a>
+  <a href="#projects" class="btn btn-outline">View Our Work</a>
+</div>
+
+</section> <!-- Services --> <section class="services" id="services"> <div class="section-title"> <h2>Our <span>Services</span></h2> <p>Complete construction solutions for residential and commercial projects.</p> </div>
+<div class="service-grid">
+
+  <div class="service-card">
+    <div class="service-icon">🏠</div>
+    <h3>Residential Construction</h3>
+    <p>
+      From new homes to additions, we build comfortable,
+      durable spaces designed around your needs.
+    </p>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon">🏢</div>
+    <h3>Commercial Construction</h3>
+    <p>
+      Reliable construction solutions for offices, retail,
+      restaurants, and commercial properties.
+    </p>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon">🔨</div>
+    <h3>Renovations</h3>
+    <p>
+      Transform existing spaces with professional remodeling
+      and renovation services.
+    </p>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon">🧱</div>
+    <h3>Concrete & Masonry</h3>
+    <p>
+      Strong foundations, driveways, patios, walls, and
+      other concrete and masonry solutions.
+    </p>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon">🏗️</div>
+    <h3>General Contracting</h3>
+    <p>
+      Complete project management from planning and permits
+      through construction and completion.
+    </p>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon">🛠️</div>
+    <h3>Maintenance</h3>
+    <p>
+      Keep your property in excellent condition with
+      dependable repair and maintenance services.
+    </p>
+  </div>
+
+</div>
+
+</section> <!-- About --> <section class="about" id="about">
+<div class="about-image">
+  <img
+    src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=80"
+    alt="Construction workers on a building project">
+</div>
+
+<div class="about-content">
+  <h2>Built on <span>Quality</span></h2>
+
+  <p>
+    At BuildPro Construction, we believe every project should
+    be built to last. Our team combines skilled workmanship,
+    quality materials, and careful project management.
+  </p>
+
+  <p>
+    Whether you're building a new property or renovating an
+    existing space, we're committed to delivering excellent
+    results from start to finish.
+  </p>
+
+  <ul class="features">
+    <li>Experienced construction professionals</li>
+    <li>Quality materials and workmanship</li>
+    <li>Transparent project communication</li>
+    <li>Reliable project scheduling</li>
+    <li>Customer-focused service</li>
+  </ul>
+
+  <a href="#contact" class="btn">Work With Us</a>
+</div>
+
+</section> <!-- Stats --> <section class="stats">
+<div class="stat">
+  <h3>15+</h3>
+  <p>Years Experience</p>
+</div>
+
+<div class="stat">
+  <h3>250+</h3>
+  <p>Projects Completed</p>
+</div>
+
+<div class="stat">
+  <h3>98%</h3>
+  <p>Client Satisfaction</p>
+</div>
+
+<div class="stat">
+  <h3>25+</h3>
+  <p>Skilled Professionals</p>
+</div>
+
+</section> <!-- Projects --> <section class="projects" id="projects">
+<div class="section-title">
+  <h2>Recent <span>Projects</span></h2>
+  <p>A selection of projects completed by our team.</p>
+</div>
+
+<div class="project-grid">
+
+  <div class="project">
+    <img
+      src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80"
+      alt="Modern residential project">
+    <div class="project-info">
+      <h3>Modern Residence</h3>
+      <p>Residential Construction</p>
+    </div>
+  </div>
+
+  <div class="project">
+    <img
+      src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80"
+      alt="Commercial building">
+    <div class="project-info">
+      <h3>Commercial Building</h3>
+      <p>Commercial Construction</p>
+    </div>
+  </div>
+
+  <div class="project">
+    <img
+      src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80"
+      alt="Interior renovation">
+    <div class="project-info">
+      <h3>Luxury Renovation</h3>
+      <p>Interior Remodeling</p>
+    </div>
+  </div>
+
+</div>
+
+</section> <!-- Contact --> <section class="contact" id="contact">
+<div class="section-title">
+  <h2>Request a <span>Quote</span></h2>
+  <p>Tell us about your project and we'll get back to you.</p>
+</div>
+
+<div class="contact-container">
+
+  <div class="contact-info">
+    <h3>Let's Build Something Great</h3>
+
+    <p>
+      Have a construction project in mind? Contact our team
+      today for a consultation.
+    </p>
+
+    <p>📍 candler north carolina</p>
+    <p>📞 (484-761-2797)</p>
+    <p>✉️ jojogomez784@gmail.com</p>
+    <p>🕒 Mon - Fri: 8:00 AM - 6:00 PM</p>
+  </div>
+
+  <form class="contact-form" onsubmit="submitForm(event)">
+
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Your name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" placeholder="Your phone number">
+    </div>
+
+    <div class="form-group">
+      <label for="message">Project Details</label>
+      <textarea
+        id="message"
+        placeholder="Tell us about your project..."
+        required></textarea>
+    </div>
+
+    <button type="submit" class="btn">Send Request</button>
+
+  </form>
+
+</div>
+
+</section> <!-- Footer --> <footer> <p> © 2026 <strong>BuildPro Construction</strong>. All Rights Reserved. </p> </footer> <script> function submitForm(event) { event.preventDefault(); const name = document.getElementById("name").value; alert( "Thank you, " + name + "! Your project request has been received." ); event.target.reset(); } </script> </body> </html>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#services">Services</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+
+  <p>
+    Professional construction and renovation services built on
+    quality, reliability, and years of experience.
+  </p>
+
+  <a href="#contact" class="btn">Get a Free Quote</a>
+  <a href="#projects" class="btn btn-outline">View Our Work</a>
+</div>
+
+<div class="service-grid">
+
+  <div class="service-card">
+    <div class="service-icon">🏠</div>
+    <h3>Residential Construction</h3>
+    <p>
+      From new homes to additions, we build comfortable,
+      durable spaces designed around your needs.
+    </p>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon">🏢</div>
+    <h3>Commercial Construction</h3>
+    <p>
+      Reliable construction solutions for offices, retail,
+      restaurants, and commercial properties.
+    </p>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon">🔨</div>
+    <h3>Renovations</h3>
+    <p>
+      Transform existing spaces with professional remodeling
+      and renovation services.
+    </p>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon">🧱</div>
+    <h3>Concrete & Masonry</h3>
+    <p>
+      Strong foundations, driveways, patios, walls, and
+      other concrete and masonry solutions.
+    </p>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon">🏗️</div>
+    <h3>General Contracting</h3>
+    <p>
+      Complete project management from planning and permits
+      through construction and completion.
+    </p>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon">🛠️</div>
+    <h3>Maintenance</h3>
+    <p>
+      Keep your property in excellent condition with
+      dependable repair and maintenance services.
+    </p>
+  </div>
+
+</div>
+
+<div class="about-image">
+  <img
+    src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=80"
+    alt="Construction workers on a building project">
+</div>
+
+<div class="about-content">
+  <h2>Built on <span>Quality</span></h2>
+
+  <p>
+    At BuildPro Construction, we believe every project should
+    be built to last. Our team combines skilled workmanship,
+    quality materials, and careful project management.
+  </p>
+
+  <p>
+    Whether you're building a new property or renovating an
+    existing space, we're committed to delivering excellent
+    results from start to finish.
+  </p>
+
+  <ul class="features">
+    <li>Experienced construction professionals</li>
+    <li>Quality materials and workmanship</li>
+    <li>Transparent project communication</li>
+    <li>Reliable project scheduling</li>
+    <li>Customer-focused service</li>
+  </ul>
+
+  <a href="#contact" class="btn">Work With Us</a>
+</div>
+
+<div class="stat">
+  <h3>15+</h3>
+  <p>Years Experience</p>
+</div>
+
+<div class="stat">
+  <h3>250+</h3>
+  <p>Projects Completed</p>
+</div>
+
+<div class="stat">
+  <h3>98%</h3>
+  <p>Client Satisfaction</p>
+</div>
+
+<div class="stat">
+  <h3>25+</h3>
+  <p>Skilled Professionals</p>
+</div>
+
+
+<div class="section-title">
+  <h2>Recent <span>Projects</span></h2>
+  <p>A selection of projects completed by our team.</p>
+</div>
+
+<div class="project-grid">
+
+  <div class="project">
+    <img
+      src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80"
+      alt="Modern residential project">
+    <div class="project-info">
+      <h3>Modern Residence</h3>
+      <p>Residential Construction</p>
+    </div>
+  </div>
+
+  <div class="project">
+    <img
+      src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80"
+      alt="Commercial building">
+    <div class="project-info">
+      <h3>Commercial Building</h3>
+      <p>Commercial Construction</p>
+    </div>
+  </div>
+
+  <div class="project">
+    <img
+      src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80"
+      alt="Interior renovation">
+    <div class="project-info">
+      <h3>Luxury Renovation</h3>
+      <p>Interior Remodeling</p>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="section-title">
+  <h2>Request a <span>Quote</span></h2>
+  <p>Tell us about your project and we'll get back to you.</p>
+</div>
+
+<div class="contact-container">
+
+  <div class="contact-info">
+    <h3>Let's Build Something Great</h3>
+
+    <p>
+      Have a construction project in mind? Contact our team
+      today for a consultation.
+    </p>
+
+    <p>📍 123 Main Street, Your City</p>
+    <p>📞 (555) 123-4567</p>
+    <p>✉️ info@buildpro.com</p>
+    <p>🕒 Mon - Fri: 8:00 AM - 6:00 PM</p>
+  </div>
+
+  <form class="contact-form" onsubmit="submitForm(event)">
+
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Your name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" placeholder="Your phone number">
+    </div>
+
+    <div class="form-group">
+      <label for="message">Project Details</label>
+      <textarea
+        id="message"
+        placeholder="Tell us about your project..."
+        required></textarea>
+    </div>
+
+    <button type="submit" class="btn">Send Request</button>
+
+  </form>
+
+</div>
+
+
+
+
+
